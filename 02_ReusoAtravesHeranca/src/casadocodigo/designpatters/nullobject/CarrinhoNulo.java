@@ -20,7 +20,7 @@ public class CarrinhoNulo extends Carrinho {
 	}
 	
 	public String getNomeUsuario(){
-		return "<a href=login.jsp>Login</>";
+		return "<a href=login.jsp>Login</a>";
 	}
 
 }//class CarrinhoNulo
