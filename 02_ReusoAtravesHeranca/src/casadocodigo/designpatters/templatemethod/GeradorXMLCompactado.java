@@ -1,10 +1,6 @@
 package casadocodigo.designpatters.templatemethod;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.util.Map;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
 /*
  * As duas próximas listagens apresentam as classes GeradorXMLCompactado e GeradorPropriedadesCriptografado
  * que implementam a classe GeradorArquivo, fornecendo uma implementação para os passos dos algoritmos
@@ -17,8 +13,7 @@ import java.util.zip.ZipOutputStream;
  */
 public class GeradorXMLCompactado extends GeradorArquivo {
 	
-	@Override
-	protected byte[] processar(byte[] bytes) throws IOException {
+	/*protected byte[] processar(byte[] bytes) throws IOException {
 		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
 		ZipOutputStream out = new ZipOutputStream(byteOut);
 		out.putNextEntry(new ZipEntry("internal"));
@@ -27,7 +22,7 @@ public class GeradorXMLCompactado extends GeradorArquivo {
 		out.close();
 		return byteOut.toByteArray();
 	}//processar()
-	
+*/	
 	@Override
 	protected String gerarConteudo(Map<String, Object> propriedades) {
 		StringBuilder propFileBuilder = new StringBuilder();

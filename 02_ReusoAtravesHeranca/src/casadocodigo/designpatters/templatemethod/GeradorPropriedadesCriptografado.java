@@ -19,7 +19,7 @@ public class GeradorPropriedadesCriptografado extends GeradorArquivo {
 		this.delay = delay;
 	}
 	
-	@Override
+/*	@Override
 	protected byte[] processar(byte[] bytes) throws IOException {
 		byte[] newBytes = new byte[bytes.length];
 		for (int i = 0; i < bytes.length; i++) {
@@ -27,7 +27,7 @@ public class GeradorPropriedadesCriptografado extends GeradorArquivo {
 		}
 		return newBytes;
 	}//processar()
-
+*/
 	@Override
 	protected String gerarConteudo(Map<String, Object> propriedades) {
 		StringBuilder propFileBuilder = new StringBuilder();
