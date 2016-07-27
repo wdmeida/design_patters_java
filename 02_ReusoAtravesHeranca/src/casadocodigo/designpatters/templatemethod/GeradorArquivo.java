@@ -24,7 +24,7 @@ public abstract class GeradorArquivo {
 	 * GeradorArquivo. Dessa forma, qualquer implementação dessa interface pode ser utilizada para realizar o
 	 * pós-processamento do arquivo. A grande motivação dessa solução no cenário apresentado é que o processador
 	 * pode ser configurado independente da subclasse que está sendo utilizada, permitindo às duas variar de forma
-	 * independente.
+	 * independente. O padrão aplicado neste exemplo foi o design pattern Bridge.
 	 */
 	private PosProcessador processador;
 	
