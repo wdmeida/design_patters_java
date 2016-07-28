@@ -41,6 +41,10 @@ public class No {
 		adjacentes.add(adj);
 	}
 	
+	/*
+	 * Caso fosse utilizada a solução com enum para o design patter State, o método setCor teria que ser
+	 * reescrito para receber como parâmetro um enum e não um objeto do tipo Cor.
+	 */
 	public void setCor(Cor cor, List<No> list) {
 		this.cor = cor;
 		cor.assumiu(this, list);
