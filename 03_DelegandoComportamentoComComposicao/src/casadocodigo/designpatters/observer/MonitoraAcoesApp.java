@@ -2,7 +2,7 @@ package casadocodigo.designpatters.observer;
 
 /*
  * Para finalizar o exemplo, associamos os observadores na carteria de ações e adicionamos ações
- * a carteria. No ínicio do código, as intâncias de GraficoBarras e AcoesLogger são criadas e associadas
+ * a carteira. No ínicio do código, as intâncias de GraficoBarras e AcoesLogger são criadas e associadas
  * ao objeto da classe CarteiraAcoes. Em seguida, o método Thread.sleep() é utilizado para gerar
  * um intevalo entre cada quantidade inserida na carteira de ações, para ser possível ver de forma 
  * progressiva as alterações no gráfico e as modificaçẽos registradas no console.
